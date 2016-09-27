@@ -1,0 +1,42 @@
+{
+    "course/course": {
+        "discussion_topics": {
+            "General": {
+                "id": "i4x-IIITH-cse22-course-cse22"
+            }
+        }, 
+        "display_name": "Artificial Neural Networks Lab ", 
+        "tabs": [
+            {
+                "name": "Home", 
+                "type": "course_info"
+            }, 
+            {
+                "name": "Course", 
+                "type": "courseware"
+            }, 
+            {
+                "name": "Textbooks", 
+                "type": "textbooks"
+            }, 
+            {
+                "name": "Discussion", 
+                "type": "discussion"
+            }, 
+            {
+                "name": "Wiki", 
+                "type": "wiki"
+            }, 
+            {
+                "name": "Progress", 
+                "type": "progress"
+            }
+        ], 
+        "xml_attributes": {
+            "filename": [
+                "course/cse22.xml", 
+                "course/cse22.xml"
+            ]
+        }
+    }
+}
