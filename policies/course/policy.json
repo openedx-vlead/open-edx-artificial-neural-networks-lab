@@ -1,11 +1,19 @@
 {
     "course/course": {
+        "advertised_start": "Anytime", 
+        "course_image": "IIITH-Artificial Neural Networks.jpg", 
         "discussion_topics": {
             "General": {
                 "id": "i4x-IIITH-cse22-course-cse22"
             }
         }, 
-        "display_name": "Artificial Neural Networks Lab ", 
+        "display_name": "Artificial Neural Networks", 
+        "instructor_info": {
+            "instructors": []
+        }, 
+        "language": "en", 
+        "learning_info": [], 
+        "start": "2016-09-29T00:00:00Z", 
         "tabs": [
             {
                 "name": "Home", 
@@ -34,8 +42,8 @@
         ], 
         "xml_attributes": {
             "filename": [
-                "course/cse22.xml", 
-                "course/cse22.xml"
+                "course/course.xml", 
+                "course/course.xml"
             ]
         }
     }
