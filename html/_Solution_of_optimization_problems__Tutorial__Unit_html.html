@@ -1,0 +1,24 @@
+<div id="experiment-article-section-2-content" class="content">
+<h3>Graph bipartition problem</h3>
+<p>The problem illustrated here is the graph bipartition problem, using Hopfield model to solve it. The problem is to partition a given graph of \(N\) nodes equally, as shown in the following figure, such that the connectivity (measured in the terms of the number of links) between the two partitioned graphs is minimum.</p>
+<p></p>
+<table width="750">
+<tbody>
+<tr>
+<td height="450"><img src="http://cse22-iiith.vlabs.ac.in/exp9/images/GrapBip1.png" style="height: 90%; width: 90%;" /></td>
+</tr>
+</tbody>
+<caption align="bottom"><b>Figure 1: </b><em>Graph bipartition problem</em></caption></table>
+<p>The problem can be mapped onto a Hopfield network, in which each bipolar unit corresponds to a node in the graph, with the state \(s_i = +1\) representing the node in one half and state \(s_i = -1\) representing the nodes in the other half. Let state \(c_{ij} = 1\) if the nodes <i>i</i> and <i>j</i> are connected and \(c_{ij} = 0\) if the nodes are not connected. Thus the cost term \(c_{ij}s_i s_j\) contributes to a non-zero value only if the nodes are connected. We have \(c_{ij}s_i s_j = +1\) if the nodes are in the same partition, and \(c_{ij}s_i s_j = -1\) if they are in different partitions. For equal division of the nodes \(\sum\limits_{j} s_i=0\). Therefore the cost term with equality constraint is given by</p>
+<ol><ol><ol><ol>\( E = -\frac{1}{2}\)\(\sum\limits_{i,j}c_{ij}s_i s_j + \frac{\alpha}{2} [\sum\limits_{i}s_i]^2 \qquad(1)\)</ol></ol></ol></ol>
+<p>where the positive constant \(\alpha\) is used to indicate the relative strengths of the two terms in the energy function. Due to conflicting requirements of the two terms, there will be several minima in the energy function. The cost functions E can be written in the Hopfield energy form as</p>
+<ol><ol><ol><ol>\( E = -\frac{1}{2}\)\( \sum\limits_{ij}w_{ij}s_i s_j + \frac{N\alpha}{2} \qquad(2)\)</ol></ol></ol></ol>
+<p>where \(w_{ij} = c_{ij}- \alpha\). The term \(N\alpha/2\) is to take care of the term corresponding to \(i=j\), since \(w_{ii} = 0\) for a Hopfield Model.</p>
+</div>
+<p></p>
+<aside id="lab-article-sidebar" class="default"></aside>
+<p></p>
+<footer id="lab-article-footer" class="default"></footer>
+<p></p>
+<footer id="lab-footer" class="default"></footer>
+<p></p>

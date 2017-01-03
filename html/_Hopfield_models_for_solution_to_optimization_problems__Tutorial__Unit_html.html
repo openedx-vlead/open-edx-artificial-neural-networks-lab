@@ -1,0 +1,38 @@
+<div id="experiment-article-section-2-content" class="content">
+<h3>Description of self-organizing feature map</h3>
+<p>Self-organizing map (SOM) was proposed by T. Kohonen [Kohonen, 1982a], and it provides a way of visualizing data. In particular, high dimensional data can be reduced to lower dimensions using SOM. The map also helps in grouping similar data together. Thus the map helps in visualizing the concept of clustering by grouping data with similar characteristics. A SOM attempts to cluster the training data by detecting similarity between data points/ feature vectors. The map does not require external supervision, and hence represents an unsupervised way of learning.</p>
+<h3>Architecture of SOM</h3>
+<p>In a self-organizing map, the input is represented by an \(M\)-dimensional feature vector. The output layer consists of \(N\) units, where the units are arranged in the form of a grid. Each unit is a neuron/node. Each dimension of the input feature vector is associated with a unit/neuron in the input layer. A weight vector is associated with a unit/node/neuron in the output layer, and the dimension of this weight vector is same as that of the input feature vector. The map operates in two modes, namely, <i>training</i> and <i>mapping</i>. The process of <i>training</i> helps to build the map using (a large number of) input feature vectors, which are also known as training examples. The process of <i>mapping</i> a new input feature vector automatically identifies the region in the output whose neighbourhood units have similar properties.</p>
+<table width="550">
+<tbody>
+<tr>
+<td height="350"><img src="http://cse22-iiith.vlabs.ac.in/exp8/SOM.png" style="height: 90%; width: 90%;" /></td>
+</tr>
+</tbody>
+<caption align="bottom"><b>Figure 1: </b><em>Architecture of SOM</em></caption></table>
+<h3>Algorithm for learning</h3>
+<p>The training of SOM is based on the principle of competitive learning (<i>Refer experiment 7, Artificial Neural Networks virtual labs</i>). A training example is a set of inputs with some given number of nodes. Initially weights in the SOM network are assigned randomly. When a training example is presented to the network, Euclidean distances between the training feature vector and all the weight vectors are computed. The neuron in the output unit for which the distance is found minimum is said to <em>fire</em>. Which mean that the weights of this neuron and the neurons close to it in the SOM network are adjusted towards the input vector. The magnitude of the adjustment decreases with time and with distance of other neurons from the fired neuron.&nbsp; A neighborhood function is defined to specify the neurons whose weight vectors are updated along with that of the fired neuron. The region of the neighborhood function&nbsp; is broad initially, and the region shrinks gradually with successive iterations. This process is repeated for each input vector for a&nbsp; number of iterations. The SOM associates the output nodes with groups or patterns in the input data set.</p>
+<p>Let us consider an \(N\)-unit output layer and \(M\)-dimensional input feature vectors. The following sequence of steps is involved in the learning process, i.e., the process of updating the weights.</p>
+<ol><ol><ol>
+<li>
+<p>Initialize the weights from \(M\) inputs to the \(N\) output units to small random values. Initialize the size of the neighbourhood region.</p>
+</li>
+<li>
+<p>Present a new input feature vector.</p>
+</li>
+<li>
+<p>Compute the distance between the input feature vector the weight vector associated with each neuron.</p>
+</li>
+<li>
+<p>Select the neuron <i>k</i> which minimizes the distance.</p>
+</li>
+<li>
+<p>Update the weight vector associated with neuron <i>k</i>, and also the weight vectors associated with neurons in the neighbourhood of neuron <i>k</i>.</p>
+</li>
+<li>
+<p>Repeat steps 2 through 5 for all inputs, several times.</p>
+</li>
+</ol></ol></ol>
+<h3>Mapping using a test feature vector</h3>
+<p>During mapping again, there will be one <em>winning</em> neuron, the neuron whose weight vector lies closest to the input vector. This will be determined by calculating the Euclidean distance between input vector and all the weight vectors. And then the test feature vector will be said to <em>fire</em> the winning neuron. The updation of weights for rest of the cycles follow the same algorithm as above.</p>
+</div>
