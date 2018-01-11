@@ -3,21 +3,21 @@
         "contentType": "image/jpeg", 
         "content_son": {
             "category": "asset", 
-            "course": "CSE22", 
+            "course": "cse22", 
             "name": "IIITH-Artificial_Neural_Networks.jpg", 
-            "org": "IIIT-Hyderabad", 
+            "org": "Virtual-Labs", 
             "revision": null, 
             "run": "Anytime", 
             "tag": "c4x"
         }, 
         "displayname": "IIITH-Artificial Neural Networks.jpg", 
-        "filename": "asset-v1:IIIT-Hyderabad+CSE22+Anytime+type@asset+block@IIITH-Artificial_Neural_Networks.jpg", 
+        "filename": "asset-v1:Virtual-Labs+cse22+Anytime+type@asset+block@IIITH-Artificial_Neural_Networks.jpg", 
         "import_path": "IIITH-Artificial Neural Networks.jpg", 
         "locked": false, 
         "thumbnail_location": [
             "c4x", 
-            "IIIT-Hyderabad", 
-            "CSE22", 
+            "Virtual-Labs", 
+            "cse22", 
             "thumbnail", 
             "IIITH-Artificial_Neural_Networks.jpg", 
             null
